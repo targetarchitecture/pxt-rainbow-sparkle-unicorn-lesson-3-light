@@ -1,6 +1,7 @@
 function loopThroughAllLEDs () {
     for (let index = 0; index <= 15; index++) {
         RainbowSparkleUnicorn.Light.turnAllOff()
+        basic.pause(500)
         if (index == 0) {
             RainbowSparkleUnicorn.Light.turnOn(lightPins.P0)
         } else if (index == 1) {
@@ -35,7 +36,7 @@ function loopThroughAllLEDs () {
             RainbowSparkleUnicorn.Light.turnOn(lightPins.P15)
         }
         basic.showNumber(index)
-        basic.pause(1000)
+        basic.pause(5000)
     }
 }
 comment.comment("To use the board you must add this block below as the first block")
